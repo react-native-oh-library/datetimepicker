@@ -65,6 +65,9 @@
   "bugs": {
     "url": "https://github.com/react-native-community/datetimepicker/issues"
   },
+  "harmony": {
+    "alias": "@react-native-community/datetimepicker"
+  },
   "homepage": "https://github.com/react-native-community/datetimepicker#readme",
   "devDependencies": {
     "@react-native-segmented-control/segmented-control": "^2.4.0",
@@ -94,7 +97,8 @@
     "semantic-release": "^19.0.3"
   },
   "dependencies": {
-    "invariant": "^2.2.4"
+    "invariant": "^2.2.4",
+    "react-native-community": "7.6.2"
   },
   "codegenConfig": {
     "name": "RNDateTimePickerCGen",
