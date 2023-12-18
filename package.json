@@ -1,6 +1,6 @@
 {
-  "name": "@react-native-community/datetimepicker",
-  "version": "7.6.2",
+  "name": "@react-native-oh-tpl/datetimepicker",
+  "version": "7.6.2-0.0.2",
   "description": "DateTimePicker component for React Native",
   "main": "./src/index.js",
   "types": "src/index.d.ts",
@@ -8,6 +8,7 @@
     "ios",
     "android",
     "src",
+    "harmony",
     "jest",
     "flow-typed",
     "windows",
