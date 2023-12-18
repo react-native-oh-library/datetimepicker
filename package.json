@@ -98,7 +98,7 @@
   },
   "dependencies": {
     "invariant": "^2.2.4",
-    "react-native-community": "7.6.2"
+    "@react-native-community/datetimepicker": "7.6.2"
   },
   "codegenConfig": {
     "name": "RNDateTimePickerCGen",
