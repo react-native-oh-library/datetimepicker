@@ -21,14 +21,14 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-import RNDateTimePicker from './picker';
-import {dateToMilliseconds, sharedPropsValidation} from './utils';
+import RNDateTimePicker from './node_modules/@react-native-community/datetimepicker/src/picker';
+import {dateToMilliseconds, sharedPropsValidation} from './node_modules/@react-native-community/datetimepicker/src/utils';
 import {
   IOS_DISPLAY,
   EVENT_TYPE_SET,
   EVENT_TYPE_DISMISSED,
   IOS_MODE,
-} from './constants';
+} from './node_modules/@react-native-community/datetimepicker/src/constants';
 import * as React from 'react';
 //import {Platform} from 'react-native';
 
@@ -37,7 +37,7 @@ import type {
   NativeEventIOS,
   IOSNativeProps,
   IOSDisplay,
-} from './types';
+} from './node_modules/@react-native-community/datetimepicker/src/types';
 
 // const getDisplaySafe = (display: IOSDisplay): IOSDisplay=>{
 //     const majorVersionIOS = parseInt(Platfrom.Version, 10);
