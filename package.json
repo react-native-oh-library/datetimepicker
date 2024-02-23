@@ -1,6 +1,6 @@
 {
   "name": "@react-native-oh-tpl/datetimepicker",
-  "version": "7.6.2-0.0.4",
+  "version": "7.6.2-0.0.5",
   "description": "DateTimePicker component for React Native",
   "harmony": {
     "alias": "@react-native-community/datetimepicker"
@@ -8,16 +8,9 @@
   "main": "./src/index.js",
   "types": "src/index.d.ts",
   "files": [
-    "ios",
-    "android",
     "harmony",
     "src",
-    "jest",
-    "flow-typed",
-    "windows",
     "RNDateTimePicker.podspec",
-    "!android/build",
-    "!ios/build",
     "!harmony/oh_modules",
     "!harmony/**/build",
     "!harmony/**/oh_modules",
@@ -105,13 +98,5 @@
   "dependencies": {
     "invariant": "^2.2.4",
     "@react-native-community/datetimepicker": "7.6.2"
-  },
-  "codegenConfig": {
-    "name": "RNDateTimePickerCGen",
-    "type": "all",
-    "jsSrcsDir": "src/specs",
-    "android": {
-      "javaPackageName": "com.reactcommunity.rndatetimepicker"
-    }
   }
 }
