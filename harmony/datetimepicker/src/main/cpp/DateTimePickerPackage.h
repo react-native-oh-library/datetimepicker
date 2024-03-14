@@ -30,16 +30,34 @@
 #include "DateTimePickerJSIBinder.h"
 #include "DateTimePickerNapiBinder.h"
 #include "DateTimePickerEventEmitRequestHandler.h"
+#include "RNOH/ArkTSComponentInstance.h"
 
 
 using namespace rnoh;
 using namespace facebook;
+
+class DateTimePickerComponentInstanceFactoryDelegate : public ComponentInstanceFactoryDelegate {
+public:
+    using ComponentInstanceFactoryDelegate::ComponentInstanceFactoryDelegate;
+
+    ComponentInstance::Shared create(ComponentInstanceFactoryContext ctx) override {
+        if (ctx.componentName == "RNDateTimePicker") {
+            return std::make_shared<ArkTSComponentInstance>(m_ctx, ctx.tag);
+        }
+        return nullptr;
+    }
+};
+
 namespace rnoh {
     
 class DateTimePickerPackage : public Package {
     public:
     DateTimePickerPackage(Package::Context ctx) : Package(ctx){}
-    
+
+    ComponentInstanceFactoryDelegate::Shared createComponentInstanceFactoryDelegate() override {
+            return std::make_shared<DateTimePickerComponentInstanceFactoryDelegate>(m_ctx);
+    }
+
     std::vector<facebook::react::ComponentDescriptorProvider> createComponentDescriptorProviders() override
     {
         return {

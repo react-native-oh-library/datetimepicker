@@ -59,7 +59,6 @@ const TAG:string = "RNDateTimePicker"
 export struct RNDateTimePicker {
   ctx!: RNOHContext
   tag: number = 0
-  @BuilderParam buildCustomComponent: (componentBuilderContext: ComponentBuilderContext) => void
   @State descriptor: PickerDescriptor = {} as PickerDescriptor
   private unregisterDescriptorChangesListener?: () => void = undefined
 

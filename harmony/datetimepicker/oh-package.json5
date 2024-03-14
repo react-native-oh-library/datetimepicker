@@ -3,7 +3,7 @@
   "types": "",
   "devDependencies": {
   },
-  "name": "rnoh-date-time-picker",
+  "name": "rnoh-datetimepicker",
   "description": "date-time-picker in harmony",
   "main": "index.ets",
   "version": "0.0.1",
