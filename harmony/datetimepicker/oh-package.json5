@@ -6,7 +6,7 @@
   "name": "rnoh-datetimepicker",
   "description": "date-time-picker in harmony",
   "main": "index.ets",
-  "version": "0.0.1",
+  "version": "7.6.2-0.1.2",
   "dependencies": {
     "rnoh": "file:../rnoh"
   }
