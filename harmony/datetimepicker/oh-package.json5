@@ -4,9 +4,9 @@
   "devDependencies": {
   },
   "name": "rnoh-datetimepicker",
-  "description": "date-time-picker in harmony",
+  "description": "c-api-foundation",
   "main": "index.ets",
-  "version": "7.6.2-0.1.2",
+  "version": "7.6.2-0.1.0",
   "dependencies": {
     "rnoh": "file:../rnoh"
   }

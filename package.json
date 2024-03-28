@@ -1,6 +1,6 @@
 {
   "name": "@react-native-oh-tpl/datetimepicker",
-  "version": "7.6.2-0.1.2",
+  "version": "7.6.2-0.1.0",
   "description": "DateTimePicker component for React Native",
   "harmony": {
     "alias": "@react-native-community/datetimepicker"
