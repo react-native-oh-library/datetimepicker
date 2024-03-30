@@ -3,10 +3,10 @@
   "types": "",
   "devDependencies": {
   },
-  "name": "rnoh-datetimepicker",
-  "description": "c-api-foundation",
+  "name": "@react-native-oh-tpl/datetimepicker",
+  "description": "date-time-picker in harmony",
   "main": "index.ets",
-  "version": "7.6.2-0.1.0",
+  "version": "7.6.2-0.1.3",
   "dependencies": {
     "rnoh": "file:../rnoh"
   }
