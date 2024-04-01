@@ -101,7 +101,7 @@ export struct RNDateTimePicker {
 
     //It is the offset in minutes between the selected date and UTC time.
     let offset = time / unit;
-    this.ctx.rnInstanceManager.emitComponentEvent(
+    this.ctx.rnInstance.emitComponentEvent(
       this.descriptor.tag,
       DATETIME_PICKER_VIEW_TYPE,
       {
@@ -114,7 +114,7 @@ export struct RNDateTimePicker {
 
   onPickerDismiss() {
     Logger.debug(TAG,`RNOH in PickerView onPickerDismiss`)
-    this.ctx.rnInstanceManager.emitComponentEvent(
+    this.ctx.rnInstance.emitComponentEvent(
       this.descriptor.tag,
       DATETIME_PICKER_VIEW_TYPE,
       {
