@@ -28,7 +28,7 @@ import {
   RNViewBase,
   ComponentBuilderContext,
   RNComponentFactory
-} from 'rnoh'
+} from '@rnoh/react-native-openharmony'
 import inputMethod from '@ohos.inputMethod';
 import Logger from './Logger';
 
