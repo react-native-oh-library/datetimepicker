@@ -3,12 +3,12 @@
   "types": "",
   "devDependencies": {
   },
-  "name": "rnoh-date-time-picker",
+  "name": "@react-native-oh-tpl/datetimepicker",
   "description": "date-time-picker in harmony",
   "main": "index.ets",
-  "version": "0.0.1",
+  "version": "7.6.2-0.1.1",
   "dependencies": {
-    "rnoh": "file:../rnoh"
+    "@rnoh/react-native-openharmony": "file:../rnoh"
   }
 }
 

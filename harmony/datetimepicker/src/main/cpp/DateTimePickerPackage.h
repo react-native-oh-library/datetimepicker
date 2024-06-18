@@ -31,15 +31,15 @@
 #include "DateTimePickerNapiBinder.h"
 #include "DateTimePickerEventEmitRequestHandler.h"
 
-
 using namespace rnoh;
 using namespace facebook;
+
 namespace rnoh {
     
 class DateTimePickerPackage : public Package {
     public:
     DateTimePickerPackage(Package::Context ctx) : Package(ctx){}
-    
+
     std::vector<facebook::react::ComponentDescriptorProvider> createComponentDescriptorProviders() override
     {
         return {

@@ -28,7 +28,7 @@ import {
   RNViewBase,
   ComponentBuilderContext,
   RNComponentFactory
-} from 'rnoh'
+} from '@rnoh/react-native-openharmony'
 import inputMethod from '@ohos.inputMethod';
 import Logger from './Logger';
 
@@ -59,7 +59,6 @@ const TAG:string = "RNDateTimePicker"
 export struct RNDateTimePicker {
   ctx!: RNOHContext
   tag: number = 0
-  @BuilderParam buildCustomComponent: (componentBuilderContext: ComponentBuilderContext) => void
   @State descriptor: PickerDescriptor = {} as PickerDescriptor
   private unregisterDescriptorChangesListener?: () => void = undefined
 
@@ -102,7 +101,7 @@ export struct RNDateTimePicker {
 
     //It is the offset in minutes between the selected date and UTC time.
     let offset = time / unit;
-    this.ctx.rnInstanceManager.emitComponentEvent(
+    this.ctx.rnInstance.emitComponentEvent(
       this.descriptor.tag,
       DATETIME_PICKER_VIEW_TYPE,
       {
@@ -115,7 +114,7 @@ export struct RNDateTimePicker {
 
   onPickerDismiss() {
     Logger.debug(TAG,`RNOH in PickerView onPickerDismiss`)
-    this.ctx.rnInstanceManager.emitComponentEvent(
+    this.ctx.rnInstance.emitComponentEvent(
       this.descriptor.tag,
       DATETIME_PICKER_VIEW_TYPE,
       {
